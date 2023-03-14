@@ -6,9 +6,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@uiball/loaders": "^1.2.6",
+    "i": "^0.3.7",
     "next": "latest",
+    "next-themes": "^0.2.1",
+    "nextjs-progressbar": "^0.0.16",
+    "npm": "^9.6.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

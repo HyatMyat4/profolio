@@ -1,3 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .frc {
+      @apply flex flex-row items-center;
+    }
+    .fcc {
+      @apply flex  flex-col items-center;
+    }
+    .Header-icon{
+        @apply p-[10px] shadow-lg rounded-full hover:scale-110 hover:bg-orange-400  cursor-pointer transition-all duration-75 ease-in
+    }
+    .slideleft{
+      @apply     animate-slideleft2
+    }
+    .slideright{
+      @apply      animate-slideright2
+    }
+    .backend{
+      @apply  animate-slideright2
+    }
+    .ScaleAnimation{
+      @apply hover:scale-125 transition-all duration-75 cursor-pointer 
+    }
+}    
+html{
+  scroll-behavior: smooth;
+}
+#monospace {
+  font-family: "Share Tech Mono", monospace;
+}
+#Roboto {
+  font-family: "Roboto", sans-serif;
+}
+#font{
+    font-family: 'Square Peg', cursive;
+}
+#instgram{
+	background: linear-gradient(81.84deg, #0099ff -9.4%, #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+#cutomscoll::-webkit-scrollbar {
+  width: 6px; 
+  
+}
+#cutomscoll::-webkit-scrollbar-track {
+  background:  black;
+}
+
+#cutomscoll::-webkit-scrollbar-thumb {
+  background:    #2DD4BF;
+  z-index: 90;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#hidden{
+  
+}
+

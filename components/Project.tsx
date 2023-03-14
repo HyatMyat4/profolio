@@ -1,0 +1,229 @@
+import React from 'react'
+import { VscGithubAlt } from "react-icons/vsc";
+import { BsBoxArrowUpRight, BsGear } from 'react-icons/bs'
+import { GoMarkGithub } from 'react-icons/go'
+import { Projectdata } from '../constant'
+import Link from 'next/link';
+
+function Project() {
+  return (
+           <div id='monospace'>
+            {Projectdata.map((data : Project) => (
+                   <section id='Projects'  className='w-full h-[93vh] frc '>
+                   <div className='w-full h-auto bg-slate-200 dark:bg-[#1e2439] rounded-[5px] shadow-lg '>
+                       <div className='w-[98%] h-auto rounded-[5px] relative group overflow-hidden  cursor-pointer  m-auto my-[8px]'>
+                         <div className='w-full h-full translate-x-[290px]  absolute rotate-[-55deg]  hidden   group-hover:inline   '>
+                         <div className='w-full h-full bg-slate-200 dark:bg-[#000000e2]  relative   animate-slidelefttranfrom  z-50 frc justify-center  '>
+                            <div className={`${data.js === "" ? "hidden"  : "" } w-[40px] h-auto rotate-[55deg] translate-y-[-130px] translate-x-[110px] `}>
+                               <img src='/js.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[45px] h-auto ${data.Ts === "" ? "hidden"  : "" } rotate-[55deg] absolute top-[30px] right-[300px] `}>
+                               <img src='/ts.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[55px] h-auto ${data.Nextjs === "" ? "hidden"  : "" } rotate-[55deg] absolute top-[100px] right-[240px] `}>
+                               <img src='/next.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[50px] ${data.tailwind === "" ? "hidden"  : "" } h-auto rotate-[55deg] translate-y-[-65px] translate-x-[110px]`}>
+                               <img src='/tailwind.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[50px] ${data.mui === "" ? "hidden"  : "" } h-auto rotate-[55deg] translate-y-[0px] translate-x-[105px]`}>
+                               <img src='/mui.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[50px] h-auto ${data.react === "" ? "hidden"  : "" } rotate-[55deg] translate-y-[-150px] translate-x-[-130px]`}>
+                               <img src='/react.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[50px] ${data.redux === "" ? "hidden"  : "" } h-auto rotate-[55deg] translate-y-[-70px] translate-x-[-120px]`}>
+                               <img src='/redux.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[50px] h-auto ${data.icons === "" ? "hidden"  : "" } rotate-[55deg] translate-y-[10px] translate-x-[-115px]`}>
+                               <img src='/icons.svg' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[50px] h-auto ${data.pusher === "" ? "hidden"  : "" } rotate-[55deg] absolute  top-[20px] left-[180px] `}>
+                               <img src='/pusher.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-[65px] h-auto ${data.nodejs === "" ? "hidden"  : "" } rotate-[55deg] absolute  top-[100px] left-[230px] `}>
+                               <img src='/nodejs.png' className='ScaleAnimation'/>
+                            </div>
+                            <div className={`w-auto  h-auto ${data.Express === "" ? "hidden"  : "" }   rotate-[55deg] top-[168px] bottom-[35px] left-[230px] absolute cursor-pointer  `}>
+                               <div className='hover:scale-125 transition-all duration-75 '>
+                                   <span className='frc text-[20px] text-gray-500'>Express<BsGear className='ml-[2px] animate-Fastspin'/></span>
+                               </div>                        
+                           </div>  
+                           <div className={`w-[25px] h-auto rotate-[55deg] ${data.mongodb === "" ? "hidden"  : "" } absolute  top-[100px] left-[170px]  bottom-[250px] `}>
+                               <img src='/mongodb.png' className='ScaleAnimation'/>
+                            </div>    
+                           <div className={`w-[35px] h-auto ${data.Firebase === "" ? "hidden"  : "" } rotate-[55deg] absolute  top-[20px] left-[100px]   `}>
+                               <img src='/Firebase.png' className='ScaleAnimation'/>
+                            </div>    
+                           <div className={`w-[45px] ${data.mysql === "" ? "hidden"  : "" } h-auto rotate-[55deg] absolute  top-[100px] left-[50px] bottom-[-120px]   `}>
+                               <img src='/mysql.png' className='ScaleAnimation'/>
+                            </div>    
+                           <div className={`w-[45px] h-auto ${data.postger === "" ? "hidden"  : "" } rotate-[55deg] absolute  top-[120px] left-[15px] bottom-[-340px]   `}>
+                               <img src='/postger.png' className='ScaleAnimation'/>
+                            </div>    
+                           <div className={`w-[40px] h-auto ${data.prisma === "" ? "hidden"  : "" } rotate-[55deg] absolute  top-[160px] left-[15px] bottom-[-520px]   `}>
+                               <img src='/prisma.webp' className='ScaleAnimation'/>
+                            </div>    
+                         </div>
+                         </div>
+                           
+                             <img src={data.PROJECT_IMG} className='rounded-[5px]'/>
+                       </div>
+                       <div className='p-[20px] pt-[10px] '>
+                          <span id='monospace' className=' text-[20px] text-teal-400'>{data.PROJECT_NAME}</span>
+                          <p className='my-[20px]'>A Real Time Full Stack SocalMedia application  User Can Upload Post With Image , User Can Make Post
+                            {data.PROJECT_TEXT} ....
+                             <a className='text-teal-400 text-[18px] z-50 cursor-pointer hover:text-orange-500 transition-all duration-75 '>More</a>
+                          </p>
+                          <div className='w-full h-auto frc justify-around flex-wrap my-[15px]'>
+                            {
+                                data.langauge_Frontend.map(data => (
+                                    <span>{data}</span>
+                                ))
+                            }                          
+                          </div>
+                          <div className='w-full h-auto frc justify-around flex-wrap mb-[20px]'>
+                          {
+                                data.langauge_Backend.map(data => (
+                                    <span>{data}</span>
+                                ))
+                            }                 
+                          </div>
+                          <div className='w-[95%] h-[1px] bg-teal-800 m-auto '></div>
+                          <div className='w-full h-[60px] frc justify-end'>
+                            <a href={data.Frontend_Repo_Link} className='w-auto relative  group'>
+                               <div className='w-auto text-[10px] absolute left-[-13px] text-white hidden group-hover:flex top-[-25px] animate-slideup rounded-[20px] bg-black frc pl-[8px] pr-[8px] py-[1px] '>Frontend</div>
+                              <VscGithubAlt className='text-[25px]  text-teal-400  cursor-pointer mr-[25px] ScaleAnimation'/>
+                            </a>
+                            <a href={data.Backend_Repo_Link} className='w-auto relative  group'>
+                               <div className='w-auto text-[10px] absolute left-[-13px] hidden group-hover:flex top-[-25px] animate-slideup 
+                               rounded-[20px] bg-black frc pl-[8px] pr-[8px] py-[1px] text-white '>Backend</div>
+                               <GoMarkGithub className='text-[25px]  text-teal-400  cursor-pointer mr-[25px] ScaleAnimation'/>
+                            </a>                  
+                            <Link href={`/${data.PROJECT_SHORT_NAME}`} className='w-auto z-50 relative  group'>
+                               <div className='w-auto text-[10px] text-white absolute left-[-13px] hidden group-hover:flex top-[-25px] animate-slideup 
+                               rounded-[20px] bg-black frc pl-[8px] pr-[8px] py-[1px] '>Detail</div>
+                               <BsBoxArrowUpRight className='text-[25px]  text-teal-400  cursor-pointer mr-[25px] ScaleAnimation'/>
+                            </Link>                  
+                        
+                          
+                          </div>
+                       </div>
+                   </div>
+                   </section>
+            ))}
+        
+          
+       </div>
+  )
+}
+
+export default Project
+
+
+/*
+    <section id='Projects'  className='w-full h-[93vh] frc'>
+            <div className='w-full h-auto bg-[#1e2439] rounded-[5px] shadow-lg '>
+                <div className='w-[98%] h-auto rounded-[5px] relative group overflow-hidden  cursor-pointer  m-auto my-[8px]'>
+                  <div className='w-full h-full translate-x-[290px]  absolute rotate-[-55deg]    group-hover:inline   '>
+                  <div className='w-full h-full bg-[#000000e2]  relative   animate-slidelefttranfrom  z-50 frc justify-center  '>
+                     <div className='w-[40px] h-auto rotate-[55deg] translate-y-[-130px] translate-x-[110px] '>
+                        <img src='/js.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[45px] h-auto rotate-[55deg] absolute top-[30px] right-[300px] '>
+                        <img src='/ts.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[55px] h-auto rotate-[55deg] absolute top-[100px] right-[240px] '>
+                        <img src='/next.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[50px] h-auto rotate-[55deg] translate-y-[-65px] translate-x-[110px]'>
+                        <img src='/tailwind.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[50px] h-auto rotate-[55deg] translate-y-[0px] translate-x-[105px]'>
+                        <img src='/mui.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[50px] h-auto rotate-[55deg] translate-y-[-150px] translate-x-[-130px]'>
+                        <img src='/react.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[50px] h-auto rotate-[55deg] translate-y-[-70px] translate-x-[-120px]'>
+                        <img src='/redux.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[50px] h-auto rotate-[55deg] translate-y-[10px] translate-x-[-115px]'>
+                        <img src='/icons.svg' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[50px] h-auto rotate-[55deg] absolute  top-[20px] left-[180px] '>
+                        <img src='/pusher.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-[65px] h-auto rotate-[55deg] absolute  top-[100px] left-[230px] '>
+                        <img src='/nodejs.png' className='ScaleAnimation'/>
+                     </div>
+                     <div className='w-auto  h-auto   rotate-[55deg] top-[168px] bottom-[35px] left-[230px] absolute cursor-pointer  '>
+                        <div className='hover:scale-125 transition-all duration-75 '>
+                            <span className='frc text-[20px] text-gray-500'>Express<BsGear className='ml-[2px] animate-Fastspin'/></span>
+                        </div>                        
+                    </div>  
+                    <div className='w-[25px] h-auto rotate-[55deg] absolute  top-[100px] left-[170px]  bottom-[250px] '>
+                        <img src='/mongodb.png' className='ScaleAnimation'/>
+                     </div>    
+                    <div className='w-[35px] h-auto rotate-[55deg] absolute  top-[20px] left-[100px]   '>
+                        <img src='/Firebase.png' className='ScaleAnimation'/>
+                     </div>    
+                    <div className='w-[45px] h-auto rotate-[55deg] absolute  top-[100px] left-[50px] bottom-[-120px]   '>
+                        <img src='/mysql.png' className='ScaleAnimation'/>
+                     </div>    
+                    <div className='w-[45px] h-auto rotate-[55deg] absolute  top-[120px] left-[15px] bottom-[-340px]   '>
+                        <img src='/postger.png' className='ScaleAnimation'/>
+                     </div>    
+                    <div className='w-[40px] h-auto rotate-[55deg] absolute  top-[160px] left-[15px] bottom-[-520px]   '>
+                        <img src='/prisma.webp' className='ScaleAnimation'/>
+                     </div>    
+                  </div>
+                  </div>
+                    
+                      <img src='/Project2.png'/>
+                </div>
+                <div className='p-[20px] pt-[10px] '>
+                   <span id='monospace' className=' text-[20px] text-teal-400'>Full Stack SocalMedia (Responsive Web App)</span>
+                   <p className='my-[20px]'>A Real Time Full Stack SocalMedia application  User Can Upload Post With Image , User Can Make Post
+                     CRUD Operations & Reaction Feature , Comment CRUD & Contain User Profile CRUD and Friends Add , Remove 
+                      RealTime Messanger Can send Image,Link,Text ....
+                      <a className='text-teal-400 text-[18px] z-50 cursor-pointer hover:text-orange-500 transition-all duration-75 '>More</a>
+                   </p>
+                   <div className='w-full h-auto frc justify-around flex-wrap my-[15px]'>
+                      <span>Java Script</span>
+                      <span>React</span>
+                      <span>Redux</span>
+                      <span>TailwindCss</span>
+                      <span>Material-ui</span>
+                      <span>React-icons</span>
+                   </div>
+                   <div className='w-full h-auto frc justify-around flex-wrap mb-[20px]'>
+                      <span>Node js</span>
+                      <span>Express Js</span>
+                      <span>Jwt Auth</span>
+                      <span>Mongo Db</span>                   
+                   </div>
+                   <div className='w-[95%] h-[1px] bg-teal-800 m-auto '></div>
+                   <div className='w-full h-[60px] frc justify-end'>
+                     <a href='https://github.com/HyatMyat4/GrapeMedia.git' className='w-auto relative  group'>
+                        <div className='w-auto text-[10px] absolute left-[-13px] hidden group-hover:flex top-[-25px] animate-slideup rounded-[20px] bg-black frc pl-[8px] pr-[8px] py-[1px] '>Frontend</div>
+                       <VscGithubAlt className='text-[25px]  text-teal-400  cursor-pointer mr-[25px] ScaleAnimation'/>
+                     </a>
+                     <a href='https://github.com/HyatMyat4/SocialMediaBackend-.git' className='w-auto relative  group'>
+                        <div className='w-auto text-[10px] absolute left-[-13px] hidden group-hover:flex top-[-25px] animate-slideup 
+                        rounded-[20px] bg-black frc pl-[8px] pr-[8px] py-[1px] '>Backend</div>
+                        <GoMarkGithub className='text-[25px]  text-teal-400  cursor-pointer mr-[25px] ScaleAnimation'/>
+                     </a>                  
+                     <Link href={"/1"} className='w-auto z-50 relative  group'>
+                        <div className='w-auto text-[10px] absolute left-[-13px] hidden group-hover:flex top-[-25px] animate-slideup 
+                        rounded-[20px] bg-black frc pl-[8px] pr-[8px] py-[1px] '>Detail</div>
+                        <BsBoxArrowUpRight className='text-[25px]  text-teal-400  cursor-pointer mr-[25px] ScaleAnimation'/>
+                     </Link>                  
+                 
+                   
+                   </div>
+                </div>
+            </div>
+            </section>
+
+*/

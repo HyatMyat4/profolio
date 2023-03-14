@@ -1,0 +1,161 @@
+import React from 'react'
+import { BsCircleFill, BsGear } from 'react-icons/bs'
+import { Typewriter } from 'react-simple-typewriter'
+export default function Skills() {
+  return (
+    <section id='Skills' className='w-full h-[93vh]   frc  justify-center'>
+        <div className='w-full h-full fcc  items-start justify-center'>
+          <div className='w-full h-[60px] flex flex-row items-center '>
+                  <span className='text-[25px] mr-[10px] font-bold text-gray-700 dark:text-gray-200'>
+                  S k i l l s 
+                  </span>
+                  <div className='w-[350px] h-[1px] bg-teal-500 mt-[5px]'></div>
+          </div>           
+           <div className='w-full h-auto rounded-[5px]  fcc items-start  cursor-pointer bg-[#282A36] mb-[15px]'>
+               <div className='w-full h-[60px] frc justify-start p-[18px]'>
+                   <BsCircleFill className='text-rose-500 mr-[8px]'/>
+                   <BsCircleFill className='text-[#FEBC2E] mr-[8px]'/>
+                   <BsCircleFill className='text-[#27C83F]'/>
+               </div>
+               <div className='w-full h-auto fcc  items-start'>                
+              <span className='w-full h-auto px-[18px] text-[17px] text-white '><span className=' text-pink-600 font-bold '> const </span>
+               <span className='  text-teal-400 text-[16px]'>Frontend</span> <span className=' text-orange-600'>=</span> 
+                <span className=' text-blue-600'> [ </span> <span className='text-teal-400  text-[17px]'>
+                <Typewriter
+                    words={['Html , Css , Mui , TailWind , Javascript , React , Redux , ReactQuery']}
+                    loop={true}
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={90}
+                    deleteSpeed={70}
+                    delaySpeed={4000}
+                  
+                />
+                
+                </span>
+                 
+                   <span className=' text-blue-600'>]</span></span>
+                <div className='w-full h-auto frc justify-around flex-wrap p-[18px]'>
+                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer '>
+                        <img src='/html.png'/>
+                    </div>
+                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/css.png'/>
+                    </div>
+                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/mui.png'/>
+                    </div>
+                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/tailwind.png'/>
+                    </div>
+                    <div className='w-[35px] h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/js.png' />
+                    </div>
+                    <div className='w-[40px] h-auto group  hover:scale-125 transition-all duration-75 cursor-pointer '>
+                        <img src='/react.png' className='group-hover:animate-Fastspin'  />
+                    </div>
+                    <div className='w-[40px] h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/redux.png' className='group-hover:animate-Fastspin' />
+                    </div>
+                    <div className='w-[45px] h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/reactquery.svg' className='group-hover:animate-Fastspin' />
+                    </div>
+                </div>
+           </div>
+           </div>
+           <div className='w-full h-auto rounded-[5px] fcc items-start mb-[15px]  cursor-pointer   bg-[#282A36]'>
+               <div className='w-full h-[60px]  frc justify-start p-[18px]'>
+                   <BsCircleFill className='text-rose-500 mr-[8px]'/>
+                   <BsCircleFill className='text-[#FEBC2E] mr-[8px]'/>
+                   <BsCircleFill className='text-[#27C83F]'/>
+               </div>
+               <div className='w-full h-auto fcc  items-start'>
+              <span className='w-full h-auto px-[18px] text-[17px] text-white '><span className=' text-pink-600 font-bold '> const </span>
+               <span className='  text-teal-400 text-[15px]'>Backend</span> <span className=' text-orange-600'>=</span> 
+                <span className=' text-blue-600'> [ </span> 
+                     <span className='text-teal-400  text-[17px]'> Nodejs <span className=' text-white'> , </span> Express
+                      <span className=' text-white'> ,</span> MongoDB <span className=' text-white'> , </span> FireBase
+                       <span className=' text-white'> , </span> MySQL <span className=' text-white'> , </span> PostgreSQL <span className=' text-white'> , </span> Prisma </span>
+                       
+                     <span className=' text-blue-600'>]</span></span>
+        
+                <div className='w-full h-auto frc  justify-around flex-wrap p-[18px] px-[20px]'>
+                    <div className='w-[60px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/nodejs.png'/>
+                    </div>
+                    <div className='w-auto  h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <span className='frc text-[20px] text-gray-500'>Express<BsGear className='ml-[2px] animate-Fastspin'/></span>
+                    </div>                
+                    <div className='w-[25px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/mongodb.png'/>
+                    </div>
+                    <div className='w-[30px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/Firebase.png'/>
+                    </div>
+                    <div className='w-[35px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/mysql.png'/>
+                    </div>
+                    <div className='w-[40px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/postger.png'/>
+                    </div>    
+                    <div className='w-[38px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/prisma.webp'/>
+                    </div>                               
+                </div>
+           </div>
+           </div>
+           <div className='w-full h-auto rounded-[5px] fcc items-start    bg-[#282A36]'>
+               <div className='w-full h-[60px]  frc justify-start p-[18px]'>
+                   <BsCircleFill className='text-rose-500 mr-[8px]'/>
+                   <BsCircleFill className='text-[#FEBC2E] mr-[8px]'/>
+                   <BsCircleFill className='text-[#27C83F]'/>
+               </div>
+               <div className='w-full h-auto fcc  items-start'>
+              <span className='w-full h-auto px-[18px] text-[17px] text-white '><span className=' text-pink-600 font-bold '> const </span>
+               <span className='  text-teal-400 text-[15px]'>MobileApp</span> <span className=' text-orange-600'>=</span> 
+                <span className=' text-blue-600'> [ </span> <span className='text-teal-400'>           
+                   <span className='text-teal-400  inline  group-hover:hidden text-[17px]'> Dart <span className=' text-white'> , </span> Flutter
+                      <span className=' text-white'> ,</span> ReactNative <span className=' text-white'>  </span> 
+                       </span>
+                  </span> 
+                     <span className=' text-blue-600'>]</span></span>
+              <span className='w-full h-auto px-[18px] text-[17px] text-white '><span className=' text-pink-600 font-bold '> const </span>
+               <span className='  text-teal-400 text-[15px] mt-[10px] '>DasktopSoftware</span> <span className=' text-orange-600'>=</span> 
+                <span className=' text-blue-600'> [ </span> <span className='text-teal-400'> Electronjs </span> , <span className='text-teal-400'> Tauri </span> 
+              
+                     <span className=' text-blue-600'>]</span></span>
+              <span className='w-full h-auto mt-[2px] px-[18px] text-[17px] text-white '><span className=' text-pink-600 font-bold '> const </span>
+               <span className='  text-teal-400 text-[15px]'>FullStack</span> <span className=' text-orange-600'>=</span> 
+              <span className='text-teal-400'> Next js </span>; 
+                    </span>
+                <div className='w-full h-auto frc  justify-around flex-wrap p-[18px] px-[20px]'>
+                    <div className='w-[45px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/dart.png'/>
+                    </div>                   
+                    <div className='w-[38px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/Flutter.png'/>
+                    </div>
+                    <div className='w-[45px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/reactnative.png'/>
+                    </div>                                 
+                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/electron.png' />
+                    </div>                                 
+                    <div className='w-[35px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/tauri.svg' />
+                    </div>                                 
+                    <div className='w-[60px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/nextjs.png'/>
+                    </div>                                 
+                    <div className='w-[40px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                        <img src='/ts.png'/>
+                    </div>                                 
+                </div>
+           </div>
+           </div>
+           
+        </div>
+       </section>
+       
+  )
+}
