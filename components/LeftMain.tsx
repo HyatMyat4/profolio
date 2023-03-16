@@ -4,7 +4,7 @@ import { FaLinkedinIn , FaFacebookF } from "react-icons/fa";
 import { SlSocialTwitter } from "react-icons/sl";
 function LeftMain() {
   return (
-    <div className='w-[100px]  h-[93vh]  fcc  animate-slideup42 items-center justify-end fixed bottom-0'>
+    <div className='w-[100px]  h-[93vh] hidden 1000:flex  fcc  animate-slideup42 items-center justify-end fixed bottom-0'>
         <div className='mb-[20px] hover:scale-125 transition-all duration-75'>
             <VscGithubAlt className='text-[28px] text-gray-700   cursor-pointer'/>
         </div>

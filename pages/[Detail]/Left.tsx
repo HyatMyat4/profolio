@@ -3,7 +3,7 @@ import { GoMarkGithub } from 'react-icons/go';
 import { VscGithubAlt } from "react-icons/vsc";
 function Left({data} : any) {
   return (
-    <div className='w-[100px]  h-[93vh]  fcc  animate-slideup42 items-center justify-end fixed bottom-0'>
+    <div className='w-[100px]  h-[93vh] hidden 1200:flex  fcc  animate-slideup42 items-center justify-end fixed bottom-0'>
           <a href={data?.Frontend_Repo_Link} className='mb-[20px] hover:scale-125 group relative transition-all duration-75'>
           <div className='w-auto text-[8px] absolute left-[-13px] hidden ml-[5px] group-hover:flex top-[-20px] animate-slideup 
                                rounded-[20px] bg-black frc pl-[8px] pr-[8px] py-[1px] '>Frontend</div>

@@ -16,10 +16,10 @@
         @apply p-[10px] shadow-lg rounded-full hover:scale-110 hover:bg-orange-400  cursor-pointer transition-all duration-75 ease-in
     }
     .slideleft{
-      @apply     animate-slideleft2
+      @apply    animate-slowfade  600:animate-slideleft2
     }
     .slideright{
-      @apply      animate-slideright2
+      @apply      animate-slowfade  600:animate-slideright2
     }
     .backend{
       @apply  animate-slideright2

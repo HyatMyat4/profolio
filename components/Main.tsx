@@ -5,6 +5,7 @@ import About from './About'
 import Skills from './Skills'
 import Project from './Project'
 import Contact from './Contact'
+
 function Main() {
 
 
@@ -22,7 +23,7 @@ function Main() {
                     entry.target.classList.add('slideleft')  
                  }
                 
-               console.log(entry.target.id,'🍧🍧')
+             
             }else{
                 entry.target.classList.remove('slideleft')
                 entry.target.classList.remove('slideright')
@@ -32,18 +33,19 @@ function Main() {
 
         const  hiddenElements = document.querySelectorAll('section')
         hiddenElements.forEach((el) => observer.observe(el))
-        console.log(hiddenElements,'🍇🍇')
+       
     }, [])
     
 
 
   return (
-    <div  className='w-[800px] h-[93vh] z-0 m-auto   '>
-       <section id='section1' className='w-full h-[91vh] mt-[3vh] frc '>
+   
+    <div  className=' w-full 800:w-[800px] h-[93vh] z-0 m-auto p-[15px] 1000:p-0  '>     
+       <section id='section1' className='w-full 400:h-[91vh] mt-[3vh] frc my-[40px]  400:my-0 '>
             <div className='w-full h-auto fcc items-start'>
                  <span className='text-teal-400 text-[20px]'>Hi, my name is,</span>
                  <h1 className='text-[45px] font-bold  '>Htet Myat . </h1>
-                   <h1 className='text-[50px] font-bold '>
+                   <h1 className='text-[50px] font-bold hidden 600:flex '>
                    <Typewriter
                     words={['I create and manage the web.']}
                     loop={5}
@@ -54,6 +56,8 @@ function Main() {
                     delaySpeed={2000}
                   
                 /></h1>
+                   <h1 className='text-[50px] font-bold flex 600:hidden '>
+                   I create and manage the web.</h1>
                    <p className=' text-[20px]'>
                     I'm a <span className='text-teal-400 '>full stack developer</span> . I am proficient
                      in designing and implementing complex features for <span className='text-sky-500'> websites </span> ,<span className=' text-orange-500'> desktop software </span> 
@@ -74,6 +78,7 @@ function Main() {
    
        
     </div>
+
   )
 }
 

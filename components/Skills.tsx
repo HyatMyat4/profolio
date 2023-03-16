@@ -3,13 +3,13 @@ import { BsCircleFill, BsGear } from 'react-icons/bs'
 import { Typewriter } from 'react-simple-typewriter'
 export default function Skills() {
   return (
-    <section id='Skills' className='w-full h-[93vh]   frc  justify-center'>
+    <section id='Skills' className='w-full h-auto 400:h-[93vh]   frc  justify-center my-[40px]  400:my-0 '>
         <div className='w-full h-full fcc  items-start justify-center'>
           <div className='w-full h-[60px] flex flex-row items-center '>
                   <span className='text-[25px] mr-[10px] font-bold text-gray-700 dark:text-gray-200'>
                   S k i l l s 
                   </span>
-                  <div className='w-[350px] h-[1px] bg-teal-500 mt-[5px]'></div>
+                  <div className='w-[350px] h-[1px] hidden 600:flex bg-teal-500 mt-[5px]'></div>
           </div>           
            <div className='w-full h-auto rounded-[5px]  fcc items-start  cursor-pointer bg-[#282A36] mb-[15px]'>
                <div className='w-full h-[60px] frc justify-start p-[18px]'>
@@ -20,7 +20,7 @@ export default function Skills() {
                <div className='w-full h-auto fcc  items-start'>                
               <span className='w-full h-auto px-[18px] text-[17px] text-white '><span className=' text-pink-600 font-bold '> const </span>
                <span className='  text-teal-400 text-[16px]'>Frontend</span> <span className=' text-orange-600'>=</span> 
-                <span className=' text-blue-600'> [ </span> <span className='text-teal-400  text-[17px]'>
+                <span className=' text-blue-600'> [ </span> <span className='text-teal-400  text-[17px] hidden 550:inline'>
                 <Typewriter
                     words={['Html , Css , Mui , TailWind , Javascript , React , Redux , ReactQuery']}
                     loop={true}
@@ -33,31 +33,33 @@ export default function Skills() {
                 />
                 
                 </span>
-                 
-                   <span className=' text-blue-600'>]</span></span>
+               <span className='text-teal-400  text-[17px] flex 550:hidden'>
+               'Html , Css , Mui , TailWind , Javascript , React , Redux , ReactQuery'
+                
+                </span><span className=' text-blue-600'>]</span></span>
                 <div className='w-full h-auto frc justify-around flex-wrap p-[18px]'>
-                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer '>
+                    <div className='w-[50px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0 '>
                         <img src='/html.png'/>
                     </div>
-                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[50px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/css.png'/>
                     </div>
-                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[50px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/mui.png'/>
                     </div>
-                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[50px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/tailwind.png'/>
                     </div>
-                    <div className='w-[35px] h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[35px] h-auto group hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/js.png' />
                     </div>
-                    <div className='w-[40px] h-auto group  hover:scale-125 transition-all duration-75 cursor-pointer '>
+                    <div className='w-[40px] h-auto group  hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0 '>
                         <img src='/react.png' className='group-hover:animate-Fastspin'  />
                     </div>
-                    <div className='w-[40px] h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[40px] h-auto group hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/redux.png' className='group-hover:animate-Fastspin' />
                     </div>
-                    <div className='w-[45px] h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[45px] h-auto group hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/reactquery.svg' className='group-hover:animate-Fastspin' />
                     </div>
                 </div>
@@ -80,25 +82,25 @@ export default function Skills() {
                      <span className=' text-blue-600'>]</span></span>
         
                 <div className='w-full h-auto frc  justify-around flex-wrap p-[18px] px-[20px]'>
-                    <div className='w-[60px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[60px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/nodejs.png'/>
                     </div>
-                    <div className='w-auto  h-auto group hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-auto  h-auto group hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <span className='frc text-[20px] text-gray-500'>Express<BsGear className='ml-[2px] animate-Fastspin'/></span>
                     </div>                
-                    <div className='w-[25px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[25px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/mongodb.png'/>
                     </div>
-                    <div className='w-[30px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[30px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/Firebase.png'/>
                     </div>
-                    <div className='w-[35px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[35px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/mysql.png'/>
                     </div>
-                    <div className='w-[40px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[40px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/postger.png'/>
                     </div>    
-                    <div className='w-[38px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[38px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/prisma.webp'/>
                     </div>                               
                 </div>
@@ -129,25 +131,25 @@ export default function Skills() {
               <span className='text-teal-400'> Next js </span>; 
                     </span>
                 <div className='w-full h-auto frc  justify-around flex-wrap p-[18px] px-[20px]'>
-                    <div className='w-[45px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[45px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/dart.png'/>
                     </div>                   
-                    <div className='w-[38px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[38px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/Flutter.png'/>
                     </div>
-                    <div className='w-[45px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[45px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/reactnative.png'/>
                     </div>                                 
-                    <div className='w-[50px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[50px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/electron.png' />
                     </div>                                 
-                    <div className='w-[35px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[35px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/tauri.svg' />
                     </div>                                 
-                    <div className='w-[60px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[60px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/nextjs.png'/>
                     </div>                                 
-                    <div className='w-[40px] h-auto hover:scale-125 transition-all duration-75 cursor-pointer  '>
+                    <div className='w-[40px] h-auto hover:animate-ping transition-all duration-75 cursor-pointer m-[10px] mb-0  '>
                         <img src='/ts.png'/>
                     </div>                                 
                 </div>

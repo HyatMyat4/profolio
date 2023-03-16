@@ -3,7 +3,7 @@ import { BsClock, BsGear } from 'react-icons/bs'
 import { DotPulse } from '@uiball/loaders'
 function Main({ifreamload , data} : any) {
   return (
-    <div className='w-[1000px] h-[93vh] m-auto '>
+    <div className='w-[1000px] h-[93vh] m-auto  '>
     <div className={`w-full h-auto py-[50px]   `}>
       <div className={`w-full h-[550px] frc justify-center ${ifreamload ? " hidden" : ""}`}>
           <DotPulse 
@@ -30,13 +30,13 @@ function Main({ifreamload , data} : any) {
             ></iframe>
       </div>
       </div>
-      <div className='w-full h-auto frc justify-between flex-wrap'>
+      <div className='w-full h-auto frc  justify-around flex-wrap'>
           {data?.USER_LANGUAGE_IMG.map((data : any )=> (
             <>
-             <div className={` h-auto cursor-pointer hover:animate-ping  animate-slowfade  ${data === 'Express' ? "hidden" : " "} ${data === '/mongodb.png' ? "w-[30px]" : "w-[50px]"}`}>
+             <div className={` h-auto cursor-pointer mx-[10px] hover:animate-ping  animate-slowfade  ${data === 'Express' ? "hidden" : " "} ${data === '/mongodb.png' ? "w-[30px]" : "w-[50px]"}`}>
                <img src={data}/>
             </div>
-              <div className={`hover:animate-ping e ${data === 'Express' ? "" : " hidden"}  cursor-pointer `}>
+              <div className={`hover:animate-ping mx-[10px] ${data === 'Express' ? "" : " hidden"}  cursor-pointer `}>
                   <span className='frc text-[20px] text-gray-500'>Express<BsGear className='ml-[2px] animate-Fastspin'/></span>
               </div>    
             </>
