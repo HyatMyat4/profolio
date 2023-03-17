@@ -2,7 +2,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 function About() {
   return (
-    <section id="About" className="w-full 400:h-[93vh]   frc  ">
+    <section id="About" className="w-full h-auto 400:h-[93vh]   frc  ">
       <div className="w-full h-auto fcc  items-start">
         <div className="w-full h-[60px] flex flex-row items-center ">
           <span className="text-[25px] mr-[10px] font-bold text-gray-700 dark:text-gray-200">

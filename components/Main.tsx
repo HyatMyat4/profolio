@@ -12,7 +12,7 @@ function Main() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (entry.target.id === "About") {
-            entry.target.classList.add("slideright");
+            entry.target.classList.add("slideleft");
           } else if (entry.target.id === "Projects") {
             entry.target.classList.add("slideright");
           } else if (entry.target.id === "Skills") {
